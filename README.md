@@ -13,7 +13,8 @@ $ git clone https://github.com/timgrossmann/Anytranslate.git ~/.hammerspoon/anyt
 
 Now you simply need to add 
 ```lua
-dofile("./anytranslate/anytranslate.lua")
+local anytranslate = require "anytranslate/anytranslate"
+anytranslate.registerDefaultBindings()
 ```
 to the init.lua file inside of the .hammerspoon folder.
 > If you don't have an init.lua file, just create it
